@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Settings" >
+
+        <CheckBoxPreference
+            android:enabled="false"
+            android:key="showIcon"
+            android:defaultValue="true"
+            android:summary="Show Math Alarm icon on launcher. You can still access the app via the Xposed Installer"
+            android:title="Show Launcher Icon" />
+        <CheckBoxPreference
+            android:key="random"
+            android:enabled="false"
+            android:checked="false"
+            android:defaultValue="true"
+            android:summary="Randomize IMEI on each request"
+            android:title="Randomize" />
+        <Preference
+            android:key="buy"
+            android:summary="Unlock all features and Remove Ads"
+            android:title="Buy Pro" />
+    </PreferenceCategory>
+</PreferenceScreen>

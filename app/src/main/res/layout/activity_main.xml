@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"  tools:context=".MainActivity" android:background="#000000"
+    android:weightSum="1.1">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@+id/tv_currentimei" android:textColor="#ffffffff"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text="Current IMEI No." android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <EditText android:enabled="false" android:textSize="20.0dip" android:id="@+id/edit_currentimei" android:layout_below="@+id/tv_currentimei" android:textColor="#ccdddddd"  android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="123456789012345677" android:ems="10"  android:layout_alignParentLeft="true">
+            <requestFocus />
+        </EditText>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@+id/tv_newimei" android:layout_below="@+id/edit_currentimei" android:textColor="#ffffffff"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="New IMEI No." android:maxLines="1" android:singleLine="true"  android:layout_alignParentLeft="true" />
+        <EditText android:enabled="true" android:textSize="20.0dip" android:id="@+id/edit_newimei" android:layout_below="@+id/tv_newimei" android:textColor="#ffffffff"  android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="555555555555555555" android:maxLines="1" android:ems="10" android:singleLine="true" android:maxLength="18"  android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <Button android:textColor="#ffffffff"  android:id="@+id/btnApply" android:background="@drawable/button_selector" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:minWidth="120.0dip" android:text="Apply" />
+            <Button android:textColor="#ffffffff" android:id="@+id/btnBuyPro" android:background="@drawable/button_selector" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:minWidth="120.0dip" android:text="Help" />
+        </LinearLayout>
+
+        <TextView android:textColor="#ffffffff" android:textIsSelectable="true" android:gravity="center_horizontal" android:id="@+id/tvOriginalIMEINo"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip" android:text="TextView" android:layout_below="@id/edit_newimei" android:layout_centerHorizontal="true"
+             />
+    </RelativeLayout>
+    <com.startapp.android.publish.banner.banner3d.Banner3D
+        android:id="@+id/startApp3DBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+</LinearLayout>
